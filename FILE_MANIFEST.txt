@@ -1,0 +1,54 @@
+crypto_lfsr_caesar_rtl_final/
+├── README.md
+├── FILE_MANIFEST.txt
+├── PROVENANCE_NOTE.txt
+├── rtl/
+│   ├── baud_tick_gen.sv
+│   ├── caesar_decrypt.sv
+│   ├── caesar_encrypt.sv
+│   ├── crypto_assertions.sv
+│   ├── crypto_controller.sv
+│   ├── crypto_core.sv
+│   ├── crypto_coverage.sv
+│   ├── crypto_reference_pkg.sv
+│   ├── lfsr_12bit.sv
+│   ├── top_system_integration.sv
+│   ├── uart_receiver_fsm.sv
+│   └── uart_transmitter_fsm.sv
+├── verification/
+│   ├── tb_baud_tick_gen.sv
+│   ├── tb_caesar_decrypt.sv
+│   ├── tb_caesar_encrypt.sv
+│   ├── tb_crypto_controller.sv
+│   ├── tb_crypto_core.sv
+│   ├── tb_lfsr_12bit.sv
+│   ├── tb_uart_receiver_fsm.sv
+│   ├── tb_uart_system.sv
+│   └── tb_uart_transmitter_fsm.sv
+├── reports/
+│   ├── final_results.txt
+│   ├── verification_final.txt
+│   ├── ubuntu_recorded_output.txt
+│   ├── ubuntu_project_file_inventory.txt
+│   ├── functional_coverage.txt
+│   ├── synthesis_original.txt
+│   ├── synthesis_optimized.txt
+│   ├── sta_original.txt
+│   ├── sta_optimized.txt
+│   ├── tool_versions_and_environment.txt
+│   └── troubleshooting_log.txt
+├── scripts/
+│   ├── sta_run.tcl
+│   ├── crypto_core.sdc
+│   ├── sky130_map_optimized.tcl
+│   ├── sky130_stat.tcl
+│   └── README.md
+├── diagrams/
+│   ├── architecture.dot
+│   ├── architecture.svg
+│   └── architecture.png
+├── netlists/
+│   └── README.md
+└── docs/
+    ├── project_scope.md
+    └── results_summary.md

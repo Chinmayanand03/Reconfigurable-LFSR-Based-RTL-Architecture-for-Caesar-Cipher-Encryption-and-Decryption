@@ -1,0 +1,25 @@
+DESIGN AND VERIFICATION OF A RECONFIGURABLE LFSR BASED RTL ARCHITECTURE
+FOR CAESAR CIPHER ENCRYPTION AND DECRYPTION
+
+Technology: Sky130 HD
+Clock Period: 10 ns
+Target Frequency: 100 MHz
+
+Original:
+Cells: 514
+Area: 3758.6048 um^2
+Critical Path Delay: 11.47 ns
+Setup Slack: -1.64 ns
+Hold Slack: +0.43 ns
+
+Optimized:
+Cells: 380
+Area: 2879.0112 um^2
+Critical Path Delay: 9.05 ns
+Setup Slack: +0.87 ns
+Hold Slack: +0.42 ns
+
+Optimization:
+Cell reduction: 26.1%
+Area reduction: 23.4%
+Critical-path delay reduction: 21.1%

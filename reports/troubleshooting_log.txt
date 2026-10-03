@@ -1,0 +1,26 @@
+RECORDED TROUBLESHOOTING NOTES
+
+1. OpenSTA SDC parsing issue
+Command:
+read_sdc crypto_core.sdc
+
+Observed:
+Warning 337 about command abbreviation.
+Nested evaluation / infinite loop style error.
+
+Workaround used successfully:
+The same clock and I/O constraints were embedded directly in sta_run.tcl instead of calling read_sdc.
+
+2. Sky130 liberty
+read_liberty succeeded using:
+sky130_fd_sc_hd__tt_025C_1v80.lib
+A default_fanout_load warning was observed and was treated as non-blocking.
+
+3. First optimization attempt
+The first Yosys optimization attempt mistakenly read the old mapped netlist, so the cell count remained unchanged.
+The script was corrected to read the current SystemVerilog RTL with:
+read_verilog -sv design.sv
+
+4. Verilator SVA support
+The standalone SVA assertion module produced an unsupported implication/sequences error under Verilator 5.044.
+The final functional testbench therefore used Verilator-compatible immediate assertions and software counters.

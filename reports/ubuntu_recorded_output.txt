@@ -1,0 +1,73 @@
+RECORDED UBUNTU OUTPUT SUMMARY
+==============================================
+
+MAIN CRYPTO VERIFICATION
+TOTAL CRYPTO TESTS : 46
+PASS                : 46
+ERRORS              : 0
+CRYPTO VERIFICATION PASS
+
+FUNCTIONAL COVERAGE
+Encryption transactions : 23
+Decryption transactions : 23
+Shift zero              : 2
+Shift low (1-8)         : 12
+Shift medium (9-17)     : 9
+Shift high (18-25)      : 10
+Shift invalid (26-31)   : 13
+Seed small (1-255)      : 6
+Seed medium (256-2047)  : 21
+Seed large (2048-4095)  : 19
+Uppercase               : 7
+Lowercase               : 8
+Space                   : 2
+Digit                   : 4
+Special                 : 25
+
+Earlier standalone functional verification results
+- LFSR verification: PASS
+- Caesar encryption verification: PASS
+- Caesar decryption verification: PASS
+- Crypto controller verification: PASS
+- UART receiver verification: PASS
+- UART transmitter verification: PASS
+- Top system integration verification: PASS
+
+BASELINE SKY130 MAPPING
+Cells : 514
+Area  : 3758.6048 um^2
+
+BASELINE OPENSTA
+Critical path delay : 11.47 ns
+Setup slack         : -1.64 ns
+Hold slack          : +0.43 ns
+
+OPTIMIZED SKY130 MAPPING
+Cells : 380
+Area  : 2879.0112 um^2
+Sequential area recorded: 726.9472 um^2
+
+OPTIMIZED OPENSTA
+Critical path delay : 9.05 ns
+Setup slack         : +0.87 ns
+Hold slack          : +0.42 ns
+
+OPTIMIZATION
+Cell reduction           : 26.1%
+Area reduction           : 23.4%
+Critical-path reduction  : 21.1%
+
+TARGET
+Clock period    : 10 ns
+Target frequency: 100 MHz
+
+TOOLS
+Verilator 5.044
+Yosys 0.52
+OpenSTA 3.1.0
+CUDD 3.0.0
+Sky130 HD
+Liberty: sky130_fd_sc_hd__tt_025C_1v80.lib
+
+IMPORTANT
+This file consolidates the output values explicitly preserved in the conversation. It is not a byte-for-byte export of the Ubuntu VM terminal log.

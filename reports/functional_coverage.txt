@@ -1,0 +1,28 @@
+CRYPTO FUNCTIONAL COVERAGE SUMMARY
+
+MODE COVERAGE
+Encryption transactions : 23
+Decryption transactions : 23
+
+SHIFT KEY COVERAGE
+Zero    (0)      : 2
+Low     (1-8)    : 12
+Medium  (9-17)   : 9
+High    (18-25)  : 10
+Invalid (26-31)  : 13
+
+SEED COVERAGE
+Small  (1-255)     : 6
+Medium (256-2047)  : 21
+Large  (2048-4095) : 19
+
+DATA COVERAGE
+Uppercase : 7
+Lowercase : 8
+Space     : 2
+Digit     : 4
+Special   : 25
+
+MODE x DATA COVERAGE
+All encryption/decryption data categories were exercised at least once.
+Exact MODE x DATA counts were not separately preserved in the recorded terminal summary.

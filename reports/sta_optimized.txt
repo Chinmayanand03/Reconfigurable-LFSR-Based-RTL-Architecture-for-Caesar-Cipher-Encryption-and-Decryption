@@ -1,0 +1,33 @@
+OPENSTA OPTIMIZED TIMING SUMMARY
+
+OpenSTA version: 3.1.0
+CUDD version: 3.0.0
+Library: sky130_fd_sc_hd__tt_025C_1v80.lib
+Clock: clk
+Clock period: 10.0 ns
+Target frequency: 100 MHz
+
+Worst setup path:
+Startpoint: _709_
+Endpoint  : _694_
+Arrival time : 9.05 ns
+Required time: 9.92 ns
+Setup slack : +0.87 ns
+Status      : MET
+
+Worst hold path:
+Startpoint: _696_
+Endpoint  : _696_
+Arrival time : 0.38 ns
+Required time: -0.04 ns
+Hold slack : +0.42 ns
+Status     : MET
+
+Conclusion:
+Timing requirements are met at the 10 ns / 100 MHz target.
+
+Derived timing note:
+The recorded timing data imply an approximate zero-slack clock period of about 9.13 ns, corresponding to about 109.5 MHz. This is a derived estimate, not a directly reported OpenSTA Fmax value.
+
+Note:
+Reset input delay was intentionally omitted because reset was constrained as a false path in the chosen STA setup.

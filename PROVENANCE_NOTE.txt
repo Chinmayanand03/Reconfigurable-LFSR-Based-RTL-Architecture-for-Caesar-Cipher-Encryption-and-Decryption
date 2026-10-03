@@ -1,0 +1,10 @@
+PACKAGE PROVENANCE
+
+This archive was assembled from:
+1. Source code pasted directly by the user in the conversation.
+2. Verification source files uploaded in the conversation and copied byte-for-byte into the package where indicated by the package manifest.
+3. Ubuntu/Yosys/OpenSTA results explicitly recorded in the conversation.
+
+The raw Ubuntu VM filesystem was not directly accessible during archive creation. Therefore raw generated netlist/report byte streams that were not uploaded are not invented. Their recorded filenames, sizes, and statistics are documented instead.
+
+The final README explicitly distinguishes the pasted integer-arithmetic crypto_core.sv from the later optimized RTL used for the final 380-cell / 2879.0112 um^2 / +0.87 ns timing results.

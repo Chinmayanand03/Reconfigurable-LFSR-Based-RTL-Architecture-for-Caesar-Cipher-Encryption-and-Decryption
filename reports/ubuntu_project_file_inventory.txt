@@ -1,0 +1,35 @@
+RECORDED ~/crypto_project FILE INVENTORY
+
+critical_path.txt
+critical_path_optimized.txt
+crypto_core.sdc
+crypto_core_netlist.v
+crypto_core_sky130.v
+crypto_core_sky130_before_opt.v
+crypto_core_sky130_final.v
+crypto_core_sky130_optimized.v
+design_before_timing_opt.sv
+design.sv
+design_final.sv
+final_results.txt
+sky130_fd_sc_hd__tt_025C_1v80.lib
+sky130_map_final.txt
+sky130_map_optimized.tcl
+sky130_map_optimized.txt
+sky130_stat.tcl
+sky130_stat.txt
+sky130_stat_optimized.txt
+sta_report.txt
+sta_report_final.txt
+sta_report_optimized.txt
+sta_run.tcl
+
+Approximate recorded sizes from the Ubuntu session:
+crypto_core_netlist.v             ~398 KB
+crypto_core_sky130.v              ~58 KB
+crypto_core_sky130_before_opt.v   ~58 KB
+crypto_core_sky130_final.v        ~43 KB
+crypto_core_sky130_optimized.v    ~43 KB
+Liberty file                       ~13 MB
+
+The raw Ubuntu VM filesystem was not mounted into this chat session, so these original generated files are listed for provenance but are not falsely recreated as raw binaries/netlists.

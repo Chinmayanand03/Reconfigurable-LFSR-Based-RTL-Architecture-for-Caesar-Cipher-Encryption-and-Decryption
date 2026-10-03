@@ -1,0 +1,32 @@
+ORIGINAL / BASELINE SYNTHESIS AND SKY130 MAPPING SUMMARY
+
+Tool: Yosys 0.52
+Technology library: Sky130 HD
+Top module: crypto_core
+
+Generic synthesis recorded statistics:
+Wires       : 7081
+Wire bits   : 7154
+Public wires: 18
+Public bits : 80
+Ports       : 16
+Port bits   : 67
+Cells       : 7111
+
+Generic netlist:
+crypto_core_netlist.v
+Approximate recorded file size: 398 KB
+
+Baseline Sky130 technology-mapped design:
+Wires       : 492
+Wire bits   : 569
+Public wires: 18
+Public bits : 84
+Ports       : 16
+Port bits   : 67
+Cells       : 514
+Area        : 3758.6048 um^2
+
+Baseline mapped netlist:
+crypto_core_sky130_before_opt.v
+Recorded file size: approximately 58 KB

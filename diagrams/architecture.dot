@@ -1,0 +1,28 @@
+digraph G {
+  rankdir=LR;
+  graph [bgcolor="white", pad="0.2", nodesep="0.5", ranksep="0.8"];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=11, margin="0.15,0.1"];
+  edge [fontname="Arial", fontsize=9, arrowsize=0.8];
+
+  clk [label="clk / reset", fillcolor="#dfe7f2"];
+  cfg [label="Runtime Configuration\nconfig_valid\nconfig_shift[4:0]\nconfig_seed[11:0]", fillcolor="#f7e6c5"];
+  ctrl [label="Control & Security Logic\nmode / start\nbusy / valid\nsecurity checks", fillcolor="#d8e8f8"];
+  lfsr [label="12-bit LFSR\nseed / state", fillcolor="#d9efd9"];
+  key [label="Key Generation\nkey = (LFSR + shift) mod 26", fillcolor="#fff1b8"];
+  cipher [label="Caesar Cipher\nEncrypt / Decrypt", fillcolor="#f4d6df"];
+  din [label="data_in[7:0]", fillcolor="#ececec"];
+  dout [label="data_out[7:0]", fillcolor="#ececec"];
+  sec [label="invalid_config /\nsecurity_alert", fillcolor="#f4cccc"];
+
+  clk -> ctrl;
+  cfg -> ctrl;
+  ctrl -> lfsr;
+  cfg -> lfsr;
+  lfsr -> key [label="state"];
+  cfg -> key [label="shift"];
+  key -> cipher [label="key[4:0]"];
+  din -> cipher;
+  ctrl -> cipher [label="mode / start"];
+  cipher -> dout;
+  ctrl -> sec;
+}

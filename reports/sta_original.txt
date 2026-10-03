@@ -1,0 +1,27 @@
+OPENSTA BASELINE TIMING SUMMARY
+
+OpenSTA version: 3.1.0
+CUDD version: 3.0.0
+Library: sky130_fd_sc_hd__tt_025C_1v80.lib
+Clock: clk
+Clock period: 10.0 ns
+Target frequency: 100 MHz
+
+Worst setup path:
+Startpoint: _976_
+Endpoint  : _961_
+Arrival time : 11.47 ns
+Required time: 9.83 ns
+Setup slack : -1.64 ns
+Status      : VIOLATED
+
+Worst hold path:
+Startpoint: _964_
+Endpoint  : _964_
+Arrival time : 0.39 ns
+Required time: -0.04 ns
+Hold slack : +0.43 ns
+Status     : MET
+
+Note:
+OpenSTA reported a warning for reset because the reset input was treated as a false path and did not receive an input delay. This was expected for the chosen constraint setup.

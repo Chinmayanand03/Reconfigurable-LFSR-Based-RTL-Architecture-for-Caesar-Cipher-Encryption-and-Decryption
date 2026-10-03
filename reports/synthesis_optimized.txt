@@ -1,0 +1,24 @@
+OPTIMIZED SYNTHESIS AND SKY130 MAPPING SUMMARY
+
+Tool: Yosys 0.52
+Technology: Sky130 HD
+Top module: crypto_core
+
+Optimized Sky130 mapped design:
+Wires       : 358
+Wire bits   : 435
+Ports       : 16
+Port bits   : 67
+Cells       : 380
+Area        : 2879.0112 um^2
+
+Sequential area:
+726.9472 um^2
+
+Optimized mapped netlist:
+crypto_core_sky130_optimized.v
+Recorded file size: approximately 43 KB
+
+Optimization versus baseline:
+Cell reduction: 26.1%
+Area reduction: 23.4%

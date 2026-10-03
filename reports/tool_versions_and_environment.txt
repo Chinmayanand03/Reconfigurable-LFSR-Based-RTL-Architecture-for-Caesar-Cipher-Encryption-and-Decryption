@@ -1,0 +1,14 @@
+RECORDED TOOL / ENVIRONMENT INFORMATION
+
+Simulator: Verilator 5.044
+Synthesis: Yosys 0.52
+STA: OpenSTA 3.1.0
+CUDD: 3.0.0
+Technology: Sky130 HD
+Liberty: sky130_fd_sc_hd__tt_025C_1v80.lib
+
+Ubuntu project directory recorded in chat:
+~/crypto_project
+
+The raw Ubuntu directory was not directly accessible from this chat session.
+Therefore, reports in this package reproduce the terminal results that were explicitly recorded in the conversation.

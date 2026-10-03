@@ -1,0 +1,21 @@
+==============================================
+          CRYPTO CORE VERIFICATION
+==============================================
+
+---- DIRECTED TESTS ----
+14 directed crypto tests
+
+---- RANDOMIZED TESTS ----
+32 randomized crypto tests
+
+---- SECURITY MONITOR TESTS ----
+Invalid shift condition: PASS
+Zero-seed security condition: PASS
+Configuration-while-busy condition: PASS
+
+---- FINAL RESULT ----
+TOTAL CRYPTO TESTS : 46
+PASS                : 46
+ERRORS              : 0
+CRYPTO VERIFICATION PASS
+==============================================
